@@ -1,0 +1,181 @@
+@font-face{
+	font-family: Avenir;
+	src: url(../fonts/avenir-next-regular.ttf);
+}
+@font-face{
+	font-family: Avenir Light;
+	src: url(../fonts/avenir-next-lt.ttf);
+}
+
+html{
+	background-color: black
+}
+.title{
+	font-family: Avenir Light;
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-size: 110px;
+}
+.subtitle{
+	font-family: Avenir Light;
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+	color: #00a99d;
+	font-size: 30px;
+}
+.form-container{
+	border: 0.5px solid white;
+	padding: 40px;
+	background-color: rgba(255,255,255,0.1);
+	margin: 0 auto;
+	width: 800px;
+	height: 320px;
+}
+.form-container-left{
+	position: relative;
+	height: 400px;
+	width: 275px;
+	float: left;
+}
+.form-container-right{
+	position: relative;
+	width: 240px;
+	height: 400px;
+	width: 500px;
+	float: right;
+}
+.form-container-right input{
+	position: relative;
+	display: inline-block;
+	color: white;
+	background-color: rgba(0,0,0,0.3);
+	border: 0.5px solid white;
+}
+.name-input{
+	padding-left: 7px;
+	position: relative;
+	margin-bottom: 20px;
+	height: 40px;
+	width: 230px;
+}
+#last-name{
+	float: right;
+	margin-right: 0;
+}
+.form-container-right textarea{
+	padding-top: 5px;
+	padding-left: 7px;
+	margin-right: 0;
+	width: 490px;
+	height: 192px;
+	position: relative;
+	float: right;
+	color: white;
+	background-color: rgba(0,0,0,0.3);
+	border: 0.5px solid white;
+}
+.photo-preview{
+	background-color: rgba(0,0,0,0.3);
+	position: relative;
+	border: 0.5px solid white;
+	height: 262px;
+	width: 250px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.photo-recommendation{
+	position: relative;
+	margin-top: 100px;
+	font-family: Avenir;
+	color: rgba(255,255,255,0.4);
+}
+
+#profile-picture{	
+	width: 262px;
+}
+
+
+input, textarea{
+	margin-right: 0;
+	font-family: Avenir Light;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+/*.submit-button{
+	float: right;
+	margin-top: 0;
+	width: 100px;
+	height: 40px;
+}*/
+.submit-button:hover{
+	background-color: rgba(255,255,255,0.1);
+
+}
+::-webkit-input-placeholder {
+	vertical-align: middle;
+	font-size: 20px;
+	font-family: Avenir Light;
+	color: rgba(255,255,255,0.4);
+	text-align: left;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	font-family: Avenir Light;
+	color: rgba(255,255,255,0.4);
+	text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	font-family: Avenir Light;
+	color: rgba(255,255,255,0.4);
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	font-family: Avenir Light;
+	color: rgba(255,255,255,0.4);
+	text-align: center;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+	position: relative;
+	margin: 0 auto;
+    max-width: 80%;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}

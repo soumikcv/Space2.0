@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/details.css">
+	<title>Profile Details - Creative Space</title>
+</head>
+<body>
+
+<p class="title">creative space</p>
+<p class="subtitle">Give us some more info.</p>
+
+<div class="form-container">
+
+	<form action="/update" method="">
+
+		<div class="form-container-left">
+			<div class="photo-preview">
+				<p class="photo-recommendation" align="center">Recommended<br>500px x 500px</p>
+				<img id="profile-picture"/>
+			</div>
+			<input type="file" name="file-3[]" id="file-3" class="inputfile"/>
+		</div>
+		<div class="form-container-right">
+			<input type="text" name="first-name" class="name-input" placeholder="First Name">
+			<input type="text" name="last-name" class="name-input" placeholder="Last Name" id="last-name">
+			<textarea maxlength="150" name="bio" placeholder="Write something about yourself..."></textarea>
+			<input type="submit" name="submit" value="Proceed" class="submit-button">
+		</div>
+
+	</form>
+
+</div>
+
+<script type="text/javascript">
+
+document.getElementById("file-3").onchange = function () {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        document.getElementById("profile-picture").src = e.target.result;
+    };
+    reader.readAsDataURL(this.files[0]);
+};
+
+</script>
+
+</body>
+</html>
